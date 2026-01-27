@@ -1,56 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #1e3a8a, #38bdf8);
     margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    background-color: #FF99CC;
-    width: 400px;
-    margin: 80px auto;
+    background: #ffffff;
+    width: 380px;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .profile {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
     margin-bottom: 15px;
 }
 
 h1 {
-    color: #1e3a8a;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin: 10px 0 5px;
+    color: #333;
 }
 
 h2 {
-    color: #FF6699;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
     margin-bottom: 15px;
 }
 
 p {
-    color: #FF9999;
-    font-size: 15px;
+    font-size: 14px;
+    color: #555;
     line-height: 1.6;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background-color: #1e3a8a;
-    color: #FF6666;
+    margin: 20px 0;
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 30px;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #0f172a;
+    background: #764ba2;
+    transform: scale(1.05);
 }
 
+#members {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#members h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#members ul {
+    list-style: none;
+    padding: 0;
+}
+
+#members li {
+    background: #f4f6ff;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
